@@ -1,8 +1,6 @@
-require_relative '/student.rb'
+require_relative 'student.rb'
 
-class ChattyStudent
-    include Student
-
+class ChattyStudent < Student
     def hello
         super
         puts "How are you doing today? I'm okay, but I'm kind of tired. Did you watch The Walking Dead last night? You didn't?! Oh man, it was so crazy! What, you don't want any spoilers? Okay well let me just tell you who died..."
@@ -10,10 +8,14 @@ class ChattyStudent
 
     def raise_hand
         super
-        i = 0
-        while i > 10
-            puts "Pick me!"
-            i += 1
-        end
+        super
+        super
+        super
+        super
+        super
+        super
+        super
+        super
+        super
     end
 end
